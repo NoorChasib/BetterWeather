@@ -13,6 +13,7 @@
 		EA59822029C57AAA001508A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA59821F29C57AAA001508A5 /* Preview Assets.xcassets */; };
 		EA59822829C57D61001508A5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59822729C57D61001508A5 /* LocationManager.swift */; };
 		EA59822B29C57F11001508A5 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59822A29C57F11001508A5 /* WelcomeView.swift */; };
+		EA59822D29C58274001508A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59822C29C58274001508A5 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		EA59821F29C57AAA001508A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA59822729C57D61001508A5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EA59822A29C57F11001508A5 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EA59822C29C58274001508A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				EA59821A29C57AA9001508A5 /* ContentView.swift */,
 				EA59822A29C57F11001508A5 /* WelcomeView.swift */,
+				EA59822C29C58274001508A5 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				EA59821B29C57AA9001508A5 /* ContentView.swift in Sources */,
 				EA59821929C57AA9001508A5 /* BetterWeatherApp.swift in Sources */,
 				EA59822829C57D61001508A5 /* LocationManager.swift in Sources */,
+				EA59822D29C58274001508A5 /* LoadingView.swift in Sources */,
 				EA59822B29C57F11001508A5 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

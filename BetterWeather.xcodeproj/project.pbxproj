@@ -19,6 +19,7 @@
 		EA59823329C58BDA001508A5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59823229C58BDA001508A5 /* ModelData.swift */; };
 		EA59823529C58C09001508A5 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = EA59823429C58C09001508A5 /* weatherData.json */; };
 		EA59823729C58D25001508A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59823629C58D25001508A5 /* Extensions.swift */; };
+		EA59823A29C59501001508A5 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59823929C59501001508A5 /* WeatherRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		EA59823229C58BDA001508A5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		EA59823429C58C09001508A5 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 		EA59823629C58D25001508A5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA59823929C59501001508A5 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		EA59821729C57AA9001508A5 /* BetterWeather */ = {
 			isa = PBXGroup;
 			children = (
+				EA59823829C594EA001508A5 /* Components */,
 				EA59821829C57AA9001508A5 /* BetterWeatherApp.swift */,
 				EA59822929C57EA2001508A5 /* Views */,
 				EA59822629C57D49001508A5 /* Managers */,
@@ -105,6 +108,14 @@
 				EA59823029C58B20001508A5 /* WeatherView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EA59823829C594EA001508A5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA59823929C59501001508A5 /* WeatherRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				EA59821B29C57AA9001508A5 /* ContentView.swift in Sources */,
 				EA59821929C57AA9001508A5 /* BetterWeatherApp.swift in Sources */,
 				EA59822829C57D61001508A5 /* LocationManager.swift in Sources */,
+				EA59823A29C59501001508A5 /* WeatherRow.swift in Sources */,
 				EA59822D29C58274001508A5 /* LoadingView.swift in Sources */,
 				EA59823329C58BDA001508A5 /* ModelData.swift in Sources */,
 				EA59823129C58B20001508A5 /* WeatherView.swift in Sources */,

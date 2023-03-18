@@ -9,7 +9,46 @@ import SwiftUI
 
 struct WeatherView: View {
    var weather: ResponseBody
+
+   func getLogo(forWeatherText weatherText: String) -> String {
+      switch weatherText {
+      case "Clear":
+         return "sun.max.fill"
+      case "Clouds":
+         return "cloud.fill"
+      case "Rain":
+         return "cloud.rain.fill"
+      case "Drizzle":
+         return "cloud.drizzle.fill"
+      case "Thunderstorm":
+         return "cloud.bolt.rain.fill"
+      case "Snow":
+         return "cloud.snow.fill"
+      case "Mist":
+         return "humidity.fill"
+      case "Smoke":
+         return "smoke.fill"
+      case "Haze":
+         return "sun.haze.fill"
+      case "Dust":
+         return "sun.dust.fill"
+      case "Fog":
+         return "cloud.fog.fill"
+      case "Sand", "Dust", "Ash":
+         return "aqi.high"
+      case "Squall":
+         return "wind"
+      case "Tornado":
+         return "tornado"
+      default:
+         return "questionmark"
+      }
+   }
+
    var body: some View {
+      let weatherText = weather.weather[0].main
+      let weatherLogo = getLogo(forWeatherText: weatherText)
+
       ZStack(alignment: .leading) {
          VStack {
             VStack(alignment: .leading, spacing: 5) {
@@ -26,9 +65,9 @@ struct WeatherView: View {
             VStack {
                HStack {
                   VStack(spacing: 20) {
-                     Image(systemName: "cloud.rain")
+                     Image(systemName: weatherLogo)
                         .font(.system(size: 40))
-                     Text(weather.weather[0].main)
+                     Text(weatherText)
                   }
                   .frame(width: 150, alignment: .leading)
 

@@ -34,7 +34,7 @@ struct WeatherView: View {
          return "sun.dust.fill"
       case "Fog":
          return "cloud.fog.fill"
-      case "Sand", "Dust", "Ash":
+      case "Sand", "Ash":
          return "aqi.high"
       case "Squall":
          return "wind"
